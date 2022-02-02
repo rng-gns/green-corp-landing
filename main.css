@@ -76,6 +76,7 @@ button:hover {
     padding-bottom: 115px;
     background: url("img/back.png") no-repeat center;
     background-size: cover;
+    position: relative;
 }
 
 .about h1 {
@@ -371,6 +372,12 @@ footer {
 .promo__text button i {
     font-size: 15px;
     margin-left: 5px;
+}
+.orb-canvas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
 }
 
 @media (max-width: 1024px) {
