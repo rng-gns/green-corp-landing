@@ -9,10 +9,17 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    position: sticky;
-    background: white;
+    position: fixed;
+    background: transparent;
     top: 0;
     z-index: 1;
+    left: 0;
+    right: 0;
+    transition: all .25s ease;
+}
+.header__scrolled {
+    background-color: white;
+    box-shadow: 0 12px 34px -11px rgb(65 62 101 / 10%);
 }
 
 .header__logo {
@@ -72,7 +79,7 @@ button:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 115px;
+    padding-top: 200px;
     padding-bottom: 115px;
     background: url("img/back.png") no-repeat center;
     background-size: cover;
@@ -238,7 +245,7 @@ footer {
 }
 
 .features .cards .card{
-    padding: 35px 40px 25px;
+    padding: 35px 40px 25px 40px;
     border: 1px solid #D9E4E6;
     border-radius: 5px;
 }
@@ -297,7 +304,7 @@ footer {
     text-align: center;
 }
 .features__box{
-    padding: 30px 40px 25px;
+    padding: 30px 40px 25px 40px;
     color: white;
     border-radius: 25px;
 }
@@ -447,10 +454,15 @@ footer {
     .footer__container {
         flex-direction: column;
     }
-    .features {
+
+    .features{
         padding: 50px 10px;
+    }
+
+    .features .cards {
         grid-template-columns: auto;
     }
+
     .features__feedback{
         flex-direction: column;
     }
